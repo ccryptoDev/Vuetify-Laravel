@@ -1,6 +1,6 @@
-<template>
+<template dusk="login-component">
   <v-container>
-    <v-row justify="center">
+    <v-row justify="center" >
       <v-col cols="12" md="6">
         <v-form
           ref="form"
@@ -43,6 +43,7 @@ export default {
     form: {},
     success: null,
     error: null,
+    loaded:true,
   }),
   methods: {
     ...mapActions("user", ["loginUser"]),
